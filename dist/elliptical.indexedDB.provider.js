@@ -123,6 +123,7 @@
               cursor.continue();
             } else {
               if (query && query.filter && query.filter !== undefined) result = self.query(result, query.filter);
+              result = self._onGet(result);
               if (query && query.paginate) result = self._repo.paginate(result, query.paginate);
               if (callback) callback(null, result);
             }
@@ -191,6 +192,11 @@
       key: 'enumerable',
       value: function enumerable(model) {
         return this._repo.Enumerable(model);
+      }
+    }, {
+      key: '_onGet',
+      value: function _onGet(result) {
+        return result;
       }
     }, {
       key: '_onPost',
