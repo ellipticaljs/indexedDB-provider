@@ -56,7 +56,7 @@
       this._store = store;
       this._dbName = dbName;
       this._filterProp = filterProp;
-      this._key = key ? key : 'id';
+      this._key = (key !== undefined) ? key : 'id';
       this._db = null;
       this._initDb();
       this._repo = new _ellipticalGenericRepository2.default([]);
