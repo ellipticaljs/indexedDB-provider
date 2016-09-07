@@ -123,7 +123,7 @@
               cursor.continue();
             } else {
               if (query && query.filter && query.filter !== undefined) result = self.query(result, query.filter);
-              result = self._onGet(result);
+              result = self._onGet(params,result);
               if (query && query.paginate) result = self._repo.paginate(result, query.paginate);
               if (callback) callback(null, result);
             }
@@ -195,7 +195,7 @@
       }
     }, {
       key: '_onGet',
-      value: function _onGet(result) {
+      value: function _onGet(params,result) {
         return result;
       }
     }, {
