@@ -1,0 +1,45 @@
+{
+  "name": "elliptical-indexedDB-provider",
+  "description": "indexedDB provider",
+  "version":"1.0.0",
+  "main": "elliptical-indexedDB-provider.html",
+  "authors": [
+    "S. Francis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "web",
+    "components"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/ellipticaljs/indexedDB-provider",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".gitignore",
+    ".npmignore",
+    "gulpfile.js",
+    "lib",
+    "docs",
+    "index.js",
+    "umd.js",
+    "package.json",
+    "demo",
+    "build.json",
+    "bundle.json",
+    ".nvmrc",
+    ".eslintrc",
+    "bin",
+    "CHANGELOG.md",
+    "demos",
+    "stylesheets",
+    "_index.scss",
+    "bk"
+  ],
+  "dependencies": {
+    "elliptical-generic-repository" :"~1.0.10"
+  }
+}
